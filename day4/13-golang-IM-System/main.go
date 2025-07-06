@@ -5,12 +5,11 @@
 
   - @LastEditors: zywOo 1372594487@qq.com
 
-  - @LastEditTime: 2025-07-05 14:51:51
+  - @LastEditTime: 2025-07-06 17:39:53
 
   - @FilePath: \go-learning\day4\13-golang-IM-System\main.go
 
   - @Description: 主入口文件
-    运行：go build -o server main.go server.go
     启动：./server
     客户端(cmd)：
     chcp 65001
@@ -55,7 +54,11 @@
 */
 package main
 
+import (
+	"golang-im-system/server"
+)
+
 func main() {
-	server := NewServer("127.0.0.1", 8888)
-	server.Start()
+	srv := server.NewServer("127.0.0.1", 8888)
+	srv.Start()
 }
