@@ -1,3 +1,12 @@
+/*
+ * @Author: zywOo 1372594487@qq.com
+ * @Date: 2025-07-01 16:07:52
+ * @LastEditors: zywOo 1372594487@qq.com
+ * @LastEditTime: 2025-07-06 19:20:18
+ * @FilePath: \go-learning\day1\05-pointer\main.go
+ * @Description:Go语言中的指针
+ *
+ */
 package main
 
 import "fmt"

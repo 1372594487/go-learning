@@ -1,0 +1,105 @@
+# =============================================================================
+# Go Learning Project - .gitignore
+# =============================================================================
+
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+
+# Compiled executables
+*.exe
+*.exe~
+main
+main.exe
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Go workspace file
+go.work
+go.work.sum
+
+# Dependency directories
+vendor/
+
+# =============================================================================
+# Project Specific
+# =============================================================================
+
+# IM System executables
+day4/13-golang-IM-System/server
+day4/13-golang-IM-System/server.exe
+day4/13-golang-IM-System/im-server*
+day4/13-golang-IM-System/client/client
+day4/13-golang-IM-System/client/client.exe
+day4/13-golang-IM-System/client/im-client*
+
+
+
+# Build directories
+build/
+dist/
+bin/
+target/
+release/
+
+# =============================================================================
+# Development Environment
+# =============================================================================
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# =============================================================================
+# Logs and Runtime
+# =============================================================================
+
+# Log files
+*.log
+logs/
+server.log
+client.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Temporary directories
+tmp/
+temp/
+cache/
+
+# Debug files
+debug.test
+__debug_bin*
+
+# Air live reload (if using)
+.air.toml
