@@ -1,11 +1,15 @@
 /*
   - @Author: zywOo 1372594487@qq.com
+
   - @Date: 2025-07-03 15:37:03
 
-* @LastEditors: zywOo 1372594487@qq.com
-* @LastEditTime: 2025-07-03 17:24:31
+  - @LastEditors: '1372594487
+
+  - @LastEditTime: 2026-01-02 23:44:54
+
 * @FilePath: \go-learning\day3\12-channel\channel.go
-  - @Description:1 channel基本定义与使用
+  - @Description:
+    1 channel基本定义与使用
     2 channel的关闭特点
     *
 */
