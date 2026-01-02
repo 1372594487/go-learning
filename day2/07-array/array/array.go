@@ -1,10 +1,14 @@
 /*
  * @Author: zywOo 1372594487@qq.com
  * @Date: 2025-07-02 11:02:19
- * @LastEditors: zywOo 1372594487@qq.com
- * @LastEditTime: 2025-07-02 11:37:40
+ * @LastEditors: 1372594487 1372594487@qq.com
+ * @LastEditTime: 2025-12-17 20:34:11
  * @FilePath: \go-learning\day2\07-array\array.go
  * @Description:array声明，赋值，遍历
+ 应用场景
+  1、存储固定大小的数据集合（一周温度数据）
+  2、内存敏感场景，数组在栈上分配
+  3、加密/编码等需要精确控制内存布局的操作
  *
  */
 package main
@@ -12,15 +16,14 @@ package main
 import "fmt"
 
 // 数组
-// 数组是值类型
+// 数组是值类型，意味着数组被复制给一个新变量或传递给函数时，会创建整个数组的副本
 // 数组是定长的
 // 数组是连续的内存空间
 
-//举例
-var arr1 [5]int
-var arr2 = [3]int{1, 3, 5}
-var arr3 = [...]int{2, 4, 6, 8, 10}
-var arr4 = [10]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+//数组声明方式
+var arr1 [5]int //声明但不初始化，默认值为0
+var arr2 = [3]int{1, 3, 5}	//声明并初始化
+var arr3 = [...]int{2, 4, 6, 8, 10} //声明并初始化，...表示根据初始化的值自动计算数组长度
 
 // 数组是值类型，赋值和传参会复制整个数组，而不是指针
 func printArray(arr [5]int) {
